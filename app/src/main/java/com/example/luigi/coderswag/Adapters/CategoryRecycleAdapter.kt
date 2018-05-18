@@ -15,7 +15,7 @@ class CategoryRecycleAdapter(val context: Context, val categories: List<Category
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val view = LayoutInflater.from(parent.context)
-                .inflate(R.layout.category_list_item, null)
+                .inflate(R.layout.category_list_item, parent, false)
         return Holder(view, itemClick)
     }
 

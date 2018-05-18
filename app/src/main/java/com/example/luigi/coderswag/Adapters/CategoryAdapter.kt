@@ -20,7 +20,7 @@ class CategoryAdapter(context: Context, categories: List<Category>) : BaseAdapte
         val holder: ViewHolder
 
         if (convertView == null) {
-            categoryView = LayoutInflater.from(context).inflate(R.layout.category_list_item, null)
+            categoryView = LayoutInflater.from(context).inflate(R.layout.category_list_item, parent, false)
             holder  = ViewHolder()
 
             holder.categoryImage = categoryView.findViewById(R.id.categoryImage)
